@@ -1,4 +1,4 @@
-package msb;
+package msb.class01;
 
 /**
  * Created by lijiexi on 2021/10/4.
@@ -11,6 +11,9 @@ public class SelectionSort {
 
 
     public static void SelectionSort(int[] a){
+        if(a==null||a.length<2){
+            return;
+        }
 
         //比较位最多到数组倒数第二位
         for(int i = 0;i<a.length-1;i++){
